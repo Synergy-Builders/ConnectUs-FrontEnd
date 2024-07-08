@@ -10,6 +10,7 @@ import {
 
 // routes
 import Root from "./routes/root"
+import PageContactUs from './routes/contactus';
 
 
 // https://reactrouter.com/en/main/start/overview
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
   },
+  {
+    path: "/contact",
+    element: <PageContactUs />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
